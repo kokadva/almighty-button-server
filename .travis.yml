@@ -1,0 +1,14 @@
+language: node_js
+
+node_js:
+  - 10
+
+branches:
+  only:
+    - master
+
+before_script:
+  - gem install dpl
+
+script:
+  - dpl --skip-cleanup --provider=heroku --app=almighty-button-main-server --api-key=fd59aea8-e264-499a-9986-bff31129b165
