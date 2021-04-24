@@ -1,6 +1,8 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
+from mail_sender import send_main
+
 app = FastAPI()
 
 origins = [
@@ -23,4 +25,5 @@ app.add_middleware(
 
 @app.get("/")
 async def root():
-    return {"message": "Almighty-Button-Server <3 <3"}
+    send_main()
+    return {"message": "Mail sent"}
