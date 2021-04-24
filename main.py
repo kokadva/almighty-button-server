@@ -8,6 +8,8 @@ origins = [
     "https://localhost.tiangolo.com",
     "http://localhost",
     "http://localhost:8080",
+    "https://almighty-button-frontend.herokuapp.com/",
+    "*"
 ]
 
 app.add_middleware(
