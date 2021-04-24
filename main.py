@@ -5,4 +5,4 @@ app = FastAPI()
 
 @app.get("/")
 async def root():
-    return {"message": "Almighty-Button-Server <3"}
+    return {"message": "Almighty-Button-Server <3 <3"}
